@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LiberatioDei DApp</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.2/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🕊️ LiberatioDei DApp</h1>
+    <button id="connectButton">Connect MetaMask</button>
+    <div id="walletAddress"></div>
+
+    <section>
+      <h2>Submit Invocation</h2>
+      <input type="text" id="message" placeholder="Message"/>
+      <input type="text" id="intent" placeholder="Intent"/>
+      <input type="text" id="finalHash" placeholder="Final Hash (bytes32)"/>
+      <input type="text" id="ipfsCID" placeholder="IPFS CID"/>
+      <input type="text" id="symbolicName" placeholder="Symbolic Name"/>
+      <button id="submitInvocation">Submit</button>
+    </section>
+
+    <section>
+      <h2>Mint Truth NFT</h2>
+      <button id="mintNFT">Mint NFT</button>
+    </section>
+
+    <section>
+      <h2>DAO Info</h2>
+      <button id="loadDAO">Load Quorum</button>
+      <div id="quorumDisplay"></div>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
